@@ -13,7 +13,10 @@ gem 'puma', '~> 5.0'
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem 'webpacker', '~> 5.0'
+
+gem 'coffee-rails', '~> 5.0'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
+
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
@@ -25,8 +28,13 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
+gem 'bulma-rails', '~> 0.9.1'
+gem 'simple_form', '~> 5.1'
+gem 'gravatar_image_tag', '~> 1.2'
+gem 'devise', '~> 4.7', '>= 4.7.3'
+
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.4.4', require: false
+gem 'bootsnap', '~> 1.7', '>= 1.7.2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -37,6 +45,15 @@ group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem 'web-console', '>= 4.1.0'
   # Display performance information such as SQL time and flame graphs for each request in your browser.
+  gem 'listen', '~> 3.4', '>= 3.4.1'
+  gem 'spring', '~> 2.1', '>= 2.1.1'
+  gem 'spring-watcher-listen', '~> 2.0', '>= 2.0.1'
+  gem 'better_errors', '~> 2.9', '>= 2.9.1'
+  gem 'guard', '~> 2.16', '>= 2.16.2'
+  gem 'guard-bundler', '~> 3.0'
+  gem 'guard-haml', '~> 1.1', '>= 1.1.2'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'eventmachine', '1.2.7', git: 'git@github.com:eventmachine/eventmachine', tag: 'v1.2.7'
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
   gem 'rack-mini-profiler', '~> 2.0'
 end
